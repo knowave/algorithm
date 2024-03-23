@@ -1,11 +1,11 @@
 function solution(my_string) {
     let answer = '';
+    
     for (const char of my_string) {
-        if (char === char.toUpperCase()) {
-            answer += char.toLowerCase();
-        } else {
-            answer += char.toUpperCase();
-        }
+        answer += char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
     }
+
     return answer;
 }
+
+console.log(solution('cccCCC'));
